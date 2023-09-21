@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICTE Online Meeting System</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Container Styles */
+        .container {
+            background-color: #713ABE;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header Styles */
+        header {
+            background-color:#5B0888 ;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 40px;
+        }
+
+        /* Meeting Form Styles */
+        .meeting-form {
+            background-color: #9D76C1;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        .meeting-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .meeting-form input[type="text"],
+        .meeting-form input[type="date"],
+        .meeting-form input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .meeting-form button {
+            background-color: #4D2DB7;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .meeting-form button:hover {
+            background-color: #BC7AF9;
+          color:black;
+        }
+
+        /* Meeting List Styles */
+        .meeting-list {
+            background-color: #9D76C1;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .meeting-list h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .meeting-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .meeting-list li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        /* Functionality Buttons */
+        .functionality-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .functionality-buttons button {
+            background-color: #4D2DB7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .bg-text{
+          background-color: #E5CFF7;
+        }
+
+
+        .functionality-buttons button:hover {
+           background-color: #BC7AF9;
+          color:black;
+        }
+
+        /* Additional Features */
+        .additional-features {
+            margin-top: 30px;
+        }
+
+        .additional-features h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .additional-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .additional-features li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AICTE Online Meeting System</h1>
+            <p>Secure, Collaborative, and Easy-to-Use</p>
+        </header>
+        <div class="content">
+            <div class="meeting-form">
+                <form>
+                    <label class ="for="meetingTitle">Meeting Title:</label>
+                    <input class ="bg-text" type="text" id="meetingTitle" name="meetingTitle" required>
+                    
+                    <label for="participantName">Your Name:</label>
+                    <input class ="bg-text" type="text" id="participantName" name="participantName" required>
+                    
+                    <label for="meetingDate">Meeting Date:</label>
+                    <input class ="bg-text" type="date" id="meetingDate" name="meetingDate" required>
+                    
+                    <label for="meetingTime">Meeting Time:</label>
+                    <input class ="bg-text" type="time" id="meetingTime" name="meetingTime" required>
+                    
+                    <a href="./Its not Responsive Yet.mp4">
+                      <button type="button">Start Meeting</button>
+                  </a>
+                  
+                </form>
+            </div>
+            <div class="meeting-list">
+                <h2>Your Upcoming Meetings</h2>
+                <ul>
+                    <li>Meeting 1: Project Discussion - June 15, 2023, 10:00 AM</li>
+                    <li>Meeting 2: Training Session - June 18, 2023, 3:30 PM</li>
+                </ul>
+            </div>
+            <div class="functionality-buttons">
+              <a href="./Its not Responsive Yet.mp4">
+                <button>Join Meeting</button>
+              </a>  
+              <a href="./Its not Responsive Yet.mp4">  
+                <button>Access Recordings</button>
+              </a>  
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
